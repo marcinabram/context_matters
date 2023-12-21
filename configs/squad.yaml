@@ -147,7 +147,6 @@
         # bind all scale points to keys.
         "sequential_key_binding": True,
     },
-    "annotation_schemes": [
     {
         "annotation_type": "text",
         "name": "textbox_input",

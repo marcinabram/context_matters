@@ -81,7 +81,7 @@
       "on": True,
       "output_filename": 'task_assignment.json',
       "sampling_strategy": 'random',
-      "labels_per_instance": 2,
+      "labels_per_instance": 99,
       "instance_per_annotator": 20,
       "test_question_per_annotator": 0, # you must set up the test question in surveyflow to use this function
 

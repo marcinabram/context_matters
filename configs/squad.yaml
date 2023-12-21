@@ -98,7 +98,7 @@
     {
         "annotation_type": "highlight",
         "name": "Correctness",
-        "description": "Highlight correct/incorrect phrases.",
+        "description": "Highlight",
         "labels": [
            "incorrect", "correct"
         ],
@@ -109,21 +109,21 @@
         # label. Highlight selection annotations with more than 10 are not supported
         # with this simple keybinding and will need to use the full item
         # specification to bind all labels to keys.
-        "sequential_key_binding": True,
+        "sequential_key_binding": False,
     },
     {
         "annotation_type": "multiselect",
         "name": "Problems",
-        "description": "What problems exist in the answer?",
+        "description": "Problems",
         "labels": [
-           "hallucinations", "Omission", "Contradiction", "Everything is ok."
+           "Hallucinations", "Omission", "Contradiction", "Supervicial content", "Everything is ok."
         ],
 
         # If true, numbers [1-len(labels)] will be bound to each
         # label. Check box annotations with more than 10 are not supported
         # with this simple keybinding and will need to use the full item
         # specification to bind all labels to keys.
-        "sequential_key_binding": True,
+        "sequential_key_binding": False,
     },
     {
         "annotation_type": "likert",
@@ -146,6 +146,20 @@
         # keybinding and will need to use the full item specification to
         # bind all scale points to keys.
         "sequential_key_binding": True,
+    },
+    "annotation_schemes": [
+    {
+        "annotation_type": "text",
+        "name": "textbox_input",
+        "description": "Comments",
+        # you could easily define a list of textboxes within one schema with a list of labels
+        "labels": ['Posities','Negatives', 'Descriptive grade', 'Comments'],
+        # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
+            "textarea": {
+              "on": False,
+              "rows": 2,
+              "cols": 40
+        }
     }
     ],
 

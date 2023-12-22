@@ -112,11 +112,33 @@
         "sequential_key_binding": False,
     },
     {
+        "annotation_type": "likert",
+
+        # This name gets used in reporting the annotation results
+        "name": "conclusion_Score",
+
+        # This text is shown to the user and can be a longer statement
+        "description": "What is the conclusion score?",
+
+        # The min and max labels are text shown at each end of the scale
+        "min_label": "Not Good",
+        "max_label": "Awesome",
+
+        # How many scale points to show
+        "size": 3,
+
+        # If true, keys [1-size] will be bound to scale responses. Likert
+        # scales larger than 10 are not supported with this simple
+        # keybinding and will need to use the full item specification to
+        # bind all scale points to keys.
+        "sequential_key_binding": True,
+    },
+    {
         "annotation_type": "multiselect",
         "name": "Problems",
         "description": "Problems",
         "labels": [
-           "Hallucinations", "Omission", "Contradiction", "Supervicial content", "Everything is ok."
+           "Hallucinations", "Omission", "Wrong Conclusion", "Wrong Approach", "Calculation Error", "Logic Error", "Everything is ok."
         ],
 
         # If true, numbers [1-len(labels)] will be bound to each
@@ -125,21 +147,22 @@
         # specification to bind all labels to keys.
         "sequential_key_binding": False,
     },
+    
     {
         "annotation_type": "likert",
 
         # This name gets used in reporting the annotation results
-        "name": "Score",
+        "name": "logic_Score",
 
         # This text is shown to the user and can be a longer statement
-        "description": "How good the answer is?",
+        "description": "What is the logic score?",
 
         # The min and max labels are text shown at each end of the scale
         "min_label": "Not Good",
         "max_label": "Awesome",
 
         # How many scale points to show
-        "size": 10,
+        "size": 4,
 
         # If true, keys [1-size] will be bound to scale responses. Likert
         # scales larger than 10 are not supported with this simple
@@ -152,13 +175,35 @@
         "name": "textbox_input",
         "description": "Comments",
         # you could easily define a list of textboxes within one schema with a list of labels
-        "labels": ['Posities','Negatives', 'Descriptive grade', 'Comments'],
+        "labels": ['Descriptive grade', 'Comments'],
         # if you want to use multi-line textbox, turn on the text area and set the desired rows and cols of the textbox
             "textarea": {
               "on": False,
               "rows": 2,
               "cols": 40
         }
+    },
+    {
+        "annotation_type": "likert",
+
+        # This name gets used in reporting the annotation results
+        "name": "truthfulness_Score",
+
+        # This text is shown to the user and can be a longer statement
+        "description": "What is the Hallucinations score?",
+
+        # The min and max labels are text shown at each end of the scale
+        "min_label": "Not Good",
+        "max_label": "Awesome",
+
+        # How many scale points to show
+        "size": 3,
+
+        # If true, keys [1-size] will be bound to scale responses. Likert
+        # scales larger than 10 are not supported with this simple
+        # keybinding and will need to use the full item specification to
+        # bind all scale points to keys.
+        "sequential_key_binding": True,
     }
     ],
 

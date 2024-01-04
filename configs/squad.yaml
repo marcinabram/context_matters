@@ -1,5 +1,5 @@
 {
-    "port": 9001,
+    "port": 8080,
 
     "server_name": "potato annotator",
 
@@ -49,7 +49,7 @@
     },
 
     #the jumping-to-id function will be disabled if "jumping_to_id_disabled" is True
-    "jumping_to_id_disabled": True,
+    "jumping_to_id_disabled": False,
 
   #the navigation bar will be hidden to the annotators if "hide_navbar" is True
     "hide_navbar": True,

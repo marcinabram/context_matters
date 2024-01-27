@@ -100,7 +100,7 @@
         "name": "Correctness",
         "description": "Highlight",
         "labels": [
-           "incorrect", "correct"
+           "incorrect", "correct", "irrelevant"
         ],
         "bad_text_label": {
           "label_content": "No answer"
@@ -118,14 +118,14 @@
         "name": "conclusion_Score",
 
         # This text is shown to the user and can be a longer statement
-        "description": "What is the conclusion score?",
+        "description": "What is the completeness and relevancy score?",
 
         # The min and max labels are text shown at each end of the scale
         "min_label": "Not Good",
         "max_label": "Awesome",
 
         # How many scale points to show
-        "size": 3,
+        "size": 5,
 
         # If true, keys [1-size] will be bound to scale responses. Likert
         # scales larger than 10 are not supported with this simple
@@ -138,7 +138,7 @@
         "name": "Problems",
         "description": "Problems",
         "labels": [
-           "Hallucinations", "Omission", "Wrong Conclusion", "Wrong Approach", "Calculation Error", "Logic Error", "Everything is ok."
+           "Hallucinations", "Omission", "Irrelevant", "Calculation Error", "Logic Error", "Everything is ok."
         ],
 
         # If true, numbers [1-len(labels)] will be bound to each
@@ -155,14 +155,14 @@
         "name": "logic_Score",
 
         # This text is shown to the user and can be a longer statement
-        "description": "What is the logic score?",
+        "description": "What is the logic and reasoning score?",
 
         # The min and max labels are text shown at each end of the scale
         "min_label": "Not Good",
         "max_label": "Awesome",
 
         # How many scale points to show
-        "size": 4,
+        "size": 5,
 
         # If true, keys [1-size] will be bound to scale responses. Likert
         # scales larger than 10 are not supported with this simple
@@ -190,14 +190,14 @@
         "name": "truthfulness_Score",
 
         # This text is shown to the user and can be a longer statement
-        "description": "What is the Hallucinations score?",
+        "description": "What is the truthfulness (lack of hallucination) score?",
 
         # The min and max labels are text shown at each end of the scale
         "min_label": "Not Good",
         "max_label": "Awesome",
 
         # How many scale points to show
-        "size": 3,
+        "size": 5,
 
         # If true, keys [1-size] will be bound to scale responses. Likert
         # scales larger than 10 are not supported with this simple

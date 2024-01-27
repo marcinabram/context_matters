@@ -5,7 +5,7 @@ id,title,context,question,text
 <strong>Generated Answer:</strong> The Heisenberg Uncertainty Principle states that you can't simultaneously know the exact position and exact speed of an object. For a particle, it means the more precisely we know its position, the less precisely we know its momentum, and vice versa.
 
 <br><br>
-<strong>Ground Truth:</strong> The Heisenberg Uncertainty Principle, represented as <p>\[\Delta x \Delta p \geq \frac{\hbar}{2}\]</p>, expresses a fundamental limit to the precision with which certain pairs of physical properties, such as position x and momentum p, can be known simultaneously. For a particle, it implies that the product of the uncertainties in position and momentum cannot be smaller than a certain value, specifically <p>\[\frac{\hbar}{2}\]</p> where <p>\[\hbar \]</p> is the reduced Planck constant.
+<strong>Ground Truth:</strong> The Heisenberg Uncertainty Principle, represented as <p>\[\Delta x \Delta p \geq \frac{\hbar}{2}\]</p>, expresses a fundamental limit to the precision with which certain pairs of physical properties, such as position x and momentum p, can be known simultaneously. For a particle, it implies that the product of the uncertainties in position and momentum cannot be smaller than a certain value, specifically <p>\[\frac{\hbar}{2}\]</p> where \[\hbar \] is the reduced Planck constant.
 
 <br>
 <hr size=""2"">
@@ -27,7 +27,7 @@ id,title,context,question,text
 <strong>Generated Answer:</strong> Superposition in quantum mechanics means an object can be in multiple states at the same time, like a coin spinning in the air being both heads and tails.
 
 <br><br>
-<strong>Ground Truth:</strong> Superposition in quantum mechanics refers to the property of a quantum system to exist in multiple states simultaneously. This is represented mathematically by the state vector of the system, which is a linear combination of the basis states. For example, if a particle can be in state |A> and state |B>, then it can also be in any state  <p>\[ |\psi> = \alpha|A> + \beta|B> \]</p>, where <p>\[\alpha \]</p> and <p>\[\beta \]</p> are complex numbers, and <p>\[ |\alpha|^2 + |\beta|^2 = 1 \]</p>.
+<strong>Ground Truth:</strong> Superposition in quantum mechanics refers to the property of a quantum system to exist in multiple states simultaneously. This is represented mathematically by the state vector of the system, which is a linear combination of the basis states. For example, if a particle can be in state |A> and state |B>, then it can also be in any state  <p>\[ |\psi> = \alpha|A> + \beta|B> \]</p>, where \[\alpha \] and \[\beta \] are complex numbers, and <p>\[ |\alpha|^2 + |\beta|^2 = 1 \]</p>.
 
 <br>
 <hr size=""2"">

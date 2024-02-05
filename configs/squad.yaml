@@ -118,7 +118,7 @@
         "name": "conclusion_Score",
 
         # This text is shown to the user and can be a longer statement
-        "description": "What is the completeness and relevancy score?",
+        "description": "How much does the answer match the ground truth (deduct points if disagree or omit content)?",
 
         # The min and max labels are text shown at each end of the scale
         "min_label": "Not Good",
@@ -155,7 +155,7 @@
         "name": "logic_Score",
 
         # This text is shown to the user and can be a longer statement
-        "description": "What is the logic and reasoning score?",
+        "description": "How well does the answer reasons (deduct points if logic or explanation does not make sense)?",
 
         # The min and max labels are text shown at each end of the scale
         "min_label": "Not Good",
@@ -195,6 +195,28 @@
         # The min and max labels are text shown at each end of the scale
         "min_label": "Not Good",
         "max_label": "Awesome",
+
+        # How many scale points to show
+        "size": 5,
+
+        # If true, keys [1-size] will be bound to scale responses. Likert
+        # scales larger than 10 are not supported with this simple
+        # keybinding and will need to use the full item specification to
+        # bind all scale points to keys.
+        "sequential_key_binding": True,
+    },
+    {
+        "annotation_type": "likert",
+
+        # This name gets used in reporting the annotation results
+        "name": "Confidence_Score",
+
+        # This text is shown to the user and can be a longer statement
+        "description": "How confident you are about your scoring?",
+
+        # The min and max labels are text shown at each end of the scale
+        "min_label": "Uncertain",
+        "max_label": "Confident",
 
         # How many scale points to show
         "size": 5,

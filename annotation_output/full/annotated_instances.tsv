@@ -1,28 +1,2 @@
 user	instance_id	displayed_text	I have read and understood the instructions.:::Yes	I want to participate in this research and continue with the study.:::Yes	conclusion_Score:::scale_1	conclusion_Score:::scale_5	Problems:::Everything is ok.	Problems:::Calculation Error	Problems:::Hallucinations	logic_Score:::scale_1	logic_Score:::scale_5	truthfulness_Score:::scale_1	truthfulness_Score:::scale_5	span_annotation:::correct	span_annotation:::incorrect
-{{username}}	Context-Matters-consent.html	consent	I have read and understood the instructions.:::Yes	I want to participate in this research and continue with the study.:::Yes										[]	[]
-mikelixiang	Context-Matters-consent.html	consent	I have read and understood the instructions.:::Yes	I want to participate in this research and continue with the study.:::Yes										[]	[]
-mikelixiang	1003	"Question 4: What is 1+1
-
-<br><br>
-<strong>Generated Answer:</strong> 4
-
-<br><br>
-<strong>Ground Truth:</strong> 2
-
-<br>
-<hr size=""2"">
-<strong>How good is the generated answer?</strong>"			1			Problems:::Calculation Error	Problems:::Hallucinations	1		1		[]	[{'start': 72, 'end': 73, 'span': '4', 'annotation': 'incorrect'}]
-mikelixiang	1005	"Question 6: What is 2+2
-
-<br><br>
-<strong>Generated Answer:</strong> 4
-
-<br><br>
-<strong>Ground Truth:</strong> 4
-
-<br>
-<hr size=""2"">
-<strong>How good is the generated answer?</strong>"				5	Problems:::Everything is ok.				5		5	[{'start': 72, 'end': 73, 'span': '4', 'annotation': 'correct'}]	[]
-haoran	Context-Matters-consent.html	consent	I have read and understood the instructions.:::Yes	I want to participate in this research and continue with the study.:::Yes										[]	[]
-mikeli	Context-Matters-consent.html	consent	I have read and understood the instructions.:::Yes	I want to participate in this research and continue with the study.:::Yes										[]	[]
-77】	Context-Matters-consent.html	consent	I have read and understood the instructions.:::Yes	I want to participate in this research and continue with the study.:::Yes										[]	[]
+															
